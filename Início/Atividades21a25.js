@@ -84,5 +84,22 @@ function verificaAluno(codigoAluno, nota1, nota2, nota3) {
     codigoAluno -= codigoAluno + 1;
   }
 }
-/*24)​ Crie um programa que imprima 11 vezes a frase " Hello World!" utilizando uma estrutura de repetição while.
-25) ​Escrever um programa para exibir os números de 1 até 50 na tela. */
+/*24)​ Crie um programa que imprima 11 vezes a frase " Hello World!" utilizando uma estrutura de repetição while.*/
+
+console.log('Exercício 24');
+
+count = 0;
+while (count < 11) {
+  console.log(`${count + 1}- Hello World!`);
+  count++;
+}
+
+/*25) ​Escrever um programa para exibir os números de 1 até 50 na tela. */
+
+console.log('Exercício 24');
+
+count = 0;
+while (count < 50) {
+  console.log(count + 1);
+  count++;
+}

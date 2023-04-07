@@ -57,11 +57,73 @@ function Crianca(nome, altura, taxaCrescimento) {
 
 console.log(Comparar(c1, c2));
 
-/* ##23​ Escreva um algoritmo que leia o código de um aluno e suas três notas. Calcule a média ponderada do
-aluno, considerando que o peso para a maior nota seja 4 e para as duas restantes, 3. Mostre o código do
-aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e
-"REPROVADO" se a média for menor que 5. Repita a operação até que o código lido seja negativo.*/
+/* ##28​ ​Ler um vetor de números inteiros e imprimir quantos são pares e quantos são ímpares.*/
 
-/*24)​ Crie um programa que imprima 11 vezes a frase " Hello World!" utilizando uma estrutura de repetição while.*/
+console.log('Exercício 28');
 
-/*25) ​Escrever um programa para exibir os números de 1 até 50 na tela. */
+let vect = [1, 2, 25, 26, 28, 13, 40];
+
+const impar = () => {
+  var count = 0;
+  for (i = 0; i < vect.length; i++) {
+    if (vect[i] % 2 !== 0) {
+      count++;
+    }
+  }
+  return count;
+};
+
+const par = () => {
+  var count = 0;
+  for (i = 0; i < vect.length; i++) {
+    if (vect[i] % 2 === 0) {
+      count++;
+    }
+  }
+  return count;
+};
+
+console.log(`${impar()} ímpares`);
+console.log(`${par()} pares`);
+
+/* ##29​ ​Utilizando a estrutura de repetição for, faça uma função que percorra um vetor e conte quantos números 
+deste vetor estão no intervalo [10,20] (repare que o intervalo é fechado, ou seja, inclui o 10 e o 20) e quantos 
+deles estão fora do intervalo, escrevendo estas informações.*/
+
+console.log('Exercício 29');
+
+let vect2 = [1, 2, 15, 16, 28, 13, 40, 10, 20, 11, 8];
+let dentro = 0;
+let fora = 0;
+
+function Contar() {
+  for (i = 0; i < vect2.length; i++) {
+    if (vect2[i] >= 10 && vect2[i] <= 20) {
+      dentro++;
+    } else {
+      fora++;
+    }
+  }
+}
+Contar();
+console.log(`${dentro} números dentro do intervalo`);
+console.log(`${fora} números fora do intervalo`);
+
+/* ##30) ​Escreva um algoritmo que percorre um vetor de inteiros e defina o maior e menor valor dentro do vetor.*/
+
+console.log('Exercício 30');
+
+let vect3 = [2, 15, 16, 28, 13, 40, -10, 20, 11, 8];
+let maior = vect3[0];
+let menor = vect3[0];
+
+for (i = 0; i < vect3.length; i++) {
+  if (vect3[i] > maior) {
+    maior = vect3[i];
+  }
+  if (vect3[i] < menor) {
+    menor = vect3[i];
+  }
+}
+console.log(maior);
+console.log(menor);
